@@ -8,6 +8,7 @@
 <meta name="description" content="Invercol SAS, especialistas en radiadores y sistemas de enfriamiento en Cali. Reparación, limpieza, soldadura y cambio de radiadores.">
 
 <style>
+
 :root{
 --rojo:#c1121f;
 --rojo-oscuro:#780000;
@@ -56,22 +57,6 @@ flex-wrap:wrap;
 display:flex;
 align-items:center;
 gap:14px;
-}
-
-.logo-temporal{
-width:68px;
-height:68px;
-border-radius:12px;
-background:linear-gradient(180deg, var(--rojo), var(--rojo-oscuro));
-display:flex;
-align-items:center;
-justify-content:center;
-color:var(--blanco);
-font-size:12px;
-font-weight:bold;
-text-align:center;
-padding:8px;
-flex-shrink:0;
 }
 
 .marca-texto h1{
@@ -156,16 +141,6 @@ border-radius:18px;
 backdrop-filter:blur(4px);
 }
 
-.hero-caja h3{
-margin-top:0;
-font-size:22px;
-}
-
-.hero-caja p{
-font-size:16px;
-margin:8px 0;
-}
-
 main{
 padding-bottom:40px;
 }
@@ -187,30 +162,32 @@ font-size:34px;
 color:var(--rojo-oscuro);
 }
 
-.titulo-seccion p{
-margin:0;
-color:var(--gris-texto);
-font-size:17px;
-}
+/* TARJETAS */
 
 .tarjetas{
 display:grid;
-grid-template-columns:repeat(4, 1fr);
-gap:20px;
+grid-template-columns:repeat(3, 1fr);
+gap:22px;
 }
 
 .card{
 background:var(--blanco);
-padding:24px;
+padding:26px;
 border-radius:16px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 border-top:5px solid var(--rojo);
+transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 28px rgba(0,0,0,0.12);
 }
 
 .card h3{
 margin-top:0;
-font-size:21px;
-color:var(--negro);
+font-size:22px;
+color:var(--rojo-oscuro);
 }
 
 .card p{
@@ -218,64 +195,7 @@ margin-bottom:0;
 color:var(--gris-texto);
 }
 
-.fondo-claro{
-background:#fffafa;
-}
-
-.razones{
-display:grid;
-grid-template-columns:repeat(2, 1fr);
-gap:20px;
-}
-
-.razon{
-background:var(--blanco);
-padding:22px;
-border-radius:16px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-border-left:6px solid var(--rojo);
-}
-
-.razon h3{
-margin:0 0 8px;
-font-size:20px;
-}
-
-.razon p{
-margin:0;
-color:var(--gris-texto);
-}
-
-.ubicacion-box{
-background:var(--blanco);
-padding:25px;
-border-radius:16px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
-
-.ubicacion-box p{
-margin:8px 0;
-font-size:17px;
-}
-
-iframe{
-width:100%;
-height:360px;
-border:0;
-border-radius:14px;
-margin-top:18px;
-}
-
-.boton-maps{
-background:var(--rojo);
-color:var(--blanco);
-padding:14px 22px;
-text-decoration:none;
-border-radius:10px;
-display:inline-block;
-margin-top:20px;
-font-weight:bold;
-}
+/* CONTACTO */
 
 .contacto{
 background:var(--negro);
@@ -290,11 +210,6 @@ margin-top:0;
 font-size:32px;
 }
 
-.contacto p{
-margin:8px 0;
-font-size:18px;
-}
-
 footer{
 background:#0f0f0f;
 color:#ddd;
@@ -302,6 +217,8 @@ text-align:center;
 padding:30px 20px;
 font-size:15px;
 }
+
+/* WHATSAPP */
 
 .whatsapp-flotante{
 position:fixed;
@@ -317,50 +234,45 @@ box-shadow:0 4px 12px rgba(0,0,0,0.3);
 z-index:1000;
 }
 
+/* RESPONSIVE */
+
 @media (max-width:900px){
-.hero-contenido,
-.tarjetas,
-.razones{
+
+.hero-contenido{
 grid-template-columns:1fr 1fr;
 }
-.hero h2{
-font-size:38px;
+
+.tarjetas{
+grid-template-columns:1fr 1fr;
 }
+
 }
 
 @media (max-width:700px){
-.barra-superior{
-align-items:flex-start;
-}
-.hero-contenido,
-.tarjetas,
-.razones{
+
+.hero-contenido{
 grid-template-columns:1fr;
 }
-.hero{
-padding:50px 20px;
+
+.tarjetas{
+grid-template-columns:1fr;
 }
+
 .hero h2{
 font-size:32px;
 }
-.marca-texto h1{
-font-size:24px;
+
 }
-.marca-texto p{
-font-size:14px;
-}
-.boton-header{
-width:100%;
-text-align:center;
-}
-}
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <div class="barra-superior">
+
 <div class="marca">
 <img src="logo.png" alt="Logo Invercol" style="height:80px;border-radius:8px;">
 <div class="marca-texto">
@@ -369,129 +281,121 @@ text-align:center;
 </div>
 </div>
 
-<a class="boton-header" href="https://wa.me/573006086842" target="_blank">Escribir por WhatsApp</a>
+<a class="boton-header" href="https://wa.me/573006086842" target="_blank">
+Escribir por WhatsApp
+</a>
+
 </div>
+
 </header>
 
 <section class="hero">
+
 <div class="hero-contenido">
+
 <div>
-<h2>Especialistas en reparación de radiadores en Cali</h2>
-<p>En Invercol S.A.S. ofrecemos soluciones en radiadores y sistemas de enfriamiento con atención directa, ubicación fácil y servicio confiable para nuestros clientes.</p>
+
+<h2>Especialistas en radiadores y sistemas de enfriamiento</h2>
+
+<p>
+En Invercol S.A.S. ofrecemos soluciones en radiadores y sistemas de enfriamiento
+para vehículos, maquinaria agrícola y equipos industriales.
+</p>
 
 <div class="botones-hero">
-<a class="boton-principal" href="https://wa.me/573006086842" target="_blank">Solicitar información</a>
-<a class="boton-secundario" href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia" target="_blank">Cómo llegar</a>
+
+<a class="boton-principal" href="https://wa.me/573006086842" target="_blank">
+Solicitar información
+</a>
+
+<a class="boton-secundario" href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia" target="_blank">
+Cómo llegar
+</a>
+
 </div>
+
 </div>
 
 <div class="hero-caja">
+
 <h3>Atención en Cali</h3>
+
 <p><strong>Dirección:</strong> Carrera 1 #32-26, Barrio Santander</p>
 <p><strong>WhatsApp:</strong> 300 608 6842</p>
 <p><strong>Empresa:</strong> Invercol S.A.S.</p>
+
 </div>
+
 </div>
+
 </section>
 
 <main>
 
 <section class="seccion">
+
 <div class="titulo-seccion">
-<h2>Nuestros servicios</h2>
-<p>Soluciones especializadas para radiadores y sistemas de enfriamiento.</p>
+<h2>Qué hacemos</h2>
 </div>
 
 <div class="tarjetas">
-<div class="card">
-<h3>Reparación de radiadores</h3>
-<p>Reparamos fugas, daños y fallas para recuperar el funcionamiento del sistema de enfriamiento.</p>
-</div>
 
 <div class="card">
-<h3>Limpieza de radiadores</h3>
-<p>Eliminamos obstrucciones y residuos para mejorar el rendimiento del radiador.</p>
-</div>
-
-<div class="card">
-<h3>Soldadura de radiadores</h3>
-<p>Realizamos trabajos de soldadura para corregir daños y prolongar la vida útil del radiador.</p>
+<h3>🔧 Diagnóstico y reparación</h3>
+<p>
+Realizamos diagnóstico y reparación de radiadores y componentes relacionados
+con el sistema de refrigeración.
+</p>
 </div>
 
 <div class="card">
-<h3>Cambio de radiadores</h3>
-<p>Instalamos radiadores nuevos cuando el sistema requiere reemplazo completo.</p>
-</div>
-</div>
-</section>
-
-<section class="seccion fondo-claro">
-<div class="titulo-seccion">
-<h2>¿Por qué elegirnos?</h2>
-<p>Una atención clara y enfocada en lo que tu vehículo necesita.</p>
+<h3>🧩 Radiadores, panales y componentes</h3>
+<p>
+Ofrecemos radiadores, panales y componentes del sistema de refrigeración
+para aplicaciones automotrices, agrícolas e industriales.
+</p>
 </div>
 
-<div class="razones">
-<div class="razon">
-<h3>Especialistas en radiadores</h3>
-<p>Nos enfocamos en radiadores y sistemas de enfriamiento, con una atención más precisa y especializada.</p>
+<div class="card">
+<h3>🚜 Aplicaciones</h3>
+<p>
+Trabajamos con radiadores para aplicaciones automotrices,
+agrícolas e industriales.
+</p>
 </div>
 
-<div class="razon">
-<h3>Ubicación fácil en Cali</h3>
-<p>Estamos ubicados en una zona accesible para que tus clientes lleguen rápido al taller.</p>
 </div>
 
-<div class="razon">
-<h3>Atención directa por WhatsApp</h3>
-<p>Facilitamos el contacto inmediato para resolver dudas y atender solicitudes de forma rápida.</p>
-</div>
-
-<div class="razon">
-<h3>Servicio confiable</h3>
-<p>Buscamos dar una atención clara, práctica y enfocada en soluciones reales para cada caso.</p>
-</div>
-</div>
 </section>
 
 <section class="seccion">
-<div class="titulo-seccion">
-<h2>Ubicación</h2>
-<p>Visítanos en Cali o abre la ruta directamente en Google Maps.</p>
-</div>
 
-<div class="ubicacion-box">
-<p><strong>Dirección:</strong> Carrera 1 #32-26 Barrio Santander</p>
-<p><strong>Ciudad:</strong> Cali, Colombia</p>
-
-<iframe
-src="https://www.google.com/maps?q=Carrera%201%20%2332-26%20Barrio%20Santander%2C%20Cali%2C%20Colombia&output=embed"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-<a class="boton-maps" href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia" target="_blank">
-Abrir ubicación en Google Maps
-</a>
-</div>
-</section>
-
-<section class="seccion">
 <div class="contacto">
+
 <h2>Contacto</h2>
+
 <p><strong>Invercol S.A.S.</strong></p>
+
 <p>Radiadores y sistemas de enfriamiento</p>
+
 <p>WhatsApp: 300 608 6842</p>
+
 <p>Carrera 1 #32-26 Barrio Santander, Cali, Colombia</p>
+
 </div>
+
 </section>
 
 </main>
 
 <footer>
+
 <p><strong>INVERCOL S.A.S.</strong></p>
+
 <p>Radiadores y sistemas de enfriamiento</p>
+
 <p>Carrera 1 #32-26 Barrio Santander, Cali, Colombia</p>
+
 </footer>
 
 <a class="whatsapp-flotante"
