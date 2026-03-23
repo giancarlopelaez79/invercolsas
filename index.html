@@ -1,411 +1,477 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invercol SAS | Radiadores y sistemas de enfriamiento en Cali</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <meta name="description" content="Invercol SAS, especialistas en radiadores y sistemas de enfriamiento en Cali. Diagnóstico, reparación y suministro de radiadores, panales y componentes del sistema de refrigeración.">
 
-  <style>
-    :root{
-      --rojo:#c1121f;
-      --rojo-oscuro:#780000;
-      --negro:#161616;
-      --gris:#f4f4f4;
-      --gris-texto:#555;
-      --blanco:#ffffff;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    *{
-      box-sizing:border-box;
-    }
+<title>Invercol SAS | Radiadores y sistemas de enfriamiento en Cali</title>
 
-    html{
-      scroll-behavior:smooth;
-    }
+<link rel="icon" type="image/png" href="favicon.png">
 
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:var(--gris);
-      color:var(--negro);
-      line-height:1.5;
-    }
+<meta name="description" content="Invercol SAS, especialistas en radiadores y sistemas de enfriamiento en Cali. Diagnóstico, reparación y suministro de radiadores, panales y componentes del sistema de refrigeración.">
 
-    header{
-      background:var(--blanco);
-      border-bottom:3px solid var(--rojo);
-      position:sticky;
-      top:0;
-      z-index:100;
-    }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    .barra-superior{
-      max-width:1100px;
-      margin:auto;
-      padding:14px 20px;
-      display:flex;
-      justify-content:flex-start;
-      align-items:center;
-      gap:20px;
-      flex-wrap:wrap;
-    }
+<style>
 
-    .marca{
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
+:root{
+--rojo:#c1121f;
+--rojo-oscuro:#780000;
+--negro:#161616;
+--gris:#f4f4f4;
+--gris-texto:#555;
+--blanco:#ffffff;
+}
 
-    .marca-texto h1{
-      margin:0;
-      font-size:28px;
-      color:var(--negro);
-    }
+*{
+box-sizing:border-box;
+}
 
-    .marca-texto p{
-      margin:2px 0 0;
-      color:var(--gris-texto);
-      font-size:15px;
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    .hero{
-      background:linear-gradient(135deg, var(--rojo-oscuro), var(--rojo));
-      color:var(--blanco);
-      padding:70px 20px;
-    }
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:var(--gris);
+color:var(--negro);
+line-height:1.5;
+}
 
-    .hero-contenido{
-      max-width:1100px;
-      margin:auto;
-      display:grid;
-      grid-template-columns:1.2fr 0.8fr;
-      gap:30px;
-      align-items:center;
-    }
+/* HEADER */
 
-    .hero h2{
-      font-size:46px;
-      line-height:1.1;
-      margin:0 0 16px;
-    }
+header{
+background:var(--blanco);
+border-bottom:3px solid var(--rojo);
+position:sticky;
+top:0;
+z-index:100;
+}
 
-    .hero p{
-      font-size:19px;
-      margin:0 0 26px;
-      max-width:700px;
-    }
+.barra-superior{
+max-width:1100px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+align-items:center;
+}
 
-    .botones-hero{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-    }
+.marca{
+display:flex;
+align-items:center;
+gap:14px;
+}
 
-    .boton-principal,
-    .boton-secundario{
-      display:inline-block;
-      padding:14px 22px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:bold;
-    }
+.marca-texto h1{
+margin:0;
+font-size:28px;
+color:var(--negro);
+}
 
-    .boton-principal{
-      background:var(--blanco);
-      color:var(--rojo-oscuro);
-    }
+.marca-texto p{
+margin:2px 0 0;
+color:var(--gris-texto);
+font-size:15px;
+}
 
-    .boton-secundario{
-      background:transparent;
-      color:var(--blanco);
-      border:2px solid rgba(255,255,255,0.7);
-    }
+/* HERO */
 
-    .hero-caja{
-      background:rgba(255,255,255,0.12);
-      padding:24px;
-      border-radius:18px;
-      backdrop-filter:blur(4px);
-    }
+.hero{
+background:linear-gradient(135deg,var(--rojo-oscuro),var(--rojo));
+color:var(--blanco);
+padding:70px 20px;
+}
 
-    .hero-caja h3{
-      margin-top:0;
-      font-size:22px;
-    }
+.hero-contenido{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1.2fr 0.8fr;
+gap:30px;
+align-items:center;
+}
 
-    .hero-caja p{
-      font-size:16px;
-      margin:8px 0;
-    }
+.hero h2{
+font-size:46px;
+margin:0 0 16px;
+}
 
-    main{
-      padding-bottom:40px;
-    }
+.hero p{
+font-size:19px;
+margin:0 0 26px;
+}
 
-    .seccion{
-      max-width:1100px;
-      margin:auto;
-      padding:60px 20px;
-    }
+.botones-hero{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+}
 
-    .titulo-seccion{
-      text-align:center;
-      margin-bottom:35px;
-    }
+.boton-principal,
+.boton-secundario{
+display:inline-block;
+padding:14px 22px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+}
 
-    .titulo-seccion h2{
-      margin:0;
-      font-size:34px;
-      color:var(--rojo-oscuro);
-    }
+.boton-principal{
+background:var(--blanco);
+color:var(--rojo-oscuro);
+}
 
-    .tarjetas{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:22px;
-    }
+.boton-secundario{
+background:transparent;
+color:var(--blanco);
+border:2px solid rgba(255,255,255,0.7);
+}
 
-    .card{
-      background:var(--blanco);
-      padding:26px;
-      border-radius:16px;
-      box-shadow:0 8px 20px rgba(0,0,0,0.08);
-      border-top:5px solid var(--rojo);
-      transition:transform 0.25s ease, box-shadow 0.25s ease;
-    }
+.hero-caja{
+background:rgba(255,255,255,0.12);
+padding:24px;
+border-radius:18px;
+}
 
-    .card:hover{
-      transform:translateY(-6px);
-      box-shadow:0 14px 28px rgba(0,0,0,0.12);
-    }
+/* SECCIONES */
 
-    .card h3{
-      margin-top:0;
-      font-size:22px;
-      color:var(--rojo-oscuro);
-    }
+main{
+padding-bottom:40px;
+}
 
-    .card p{
-      margin-bottom:0;
-      color:var(--gris-texto);
-    }
+.seccion{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
 
-    .ubicacion-box{
-      background:var(--blanco);
-      padding:25px;
-      border-radius:16px;
-      box-shadow:0 6px 18px rgba(0,0,0,0.08);
-    }
+.titulo-seccion{
+text-align:center;
+margin-bottom:35px;
+}
 
-    .ubicacion-box p{
-      margin:8px 0;
-      font-size:17px;
-    }
+.titulo-seccion h2{
+margin:0;
+font-size:34px;
+color:var(--rojo-oscuro);
+}
 
-    iframe{
-      width:100%;
-      height:360px;
-      border:0;
-      border-radius:14px;
-      margin-top:18px;
-    }
+/* TARJETAS */
 
-    .boton-maps{
-      background:var(--rojo);
-      color:var(--blanco);
-      padding:14px 22px;
-      text-decoration:none;
-      border-radius:10px;
-      display:inline-block;
-      margin-top:20px;
-      font-weight:bold;
-    }
+.tarjetas{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
 
-    .contacto{
-      background:var(--negro);
-      color:var(--blanco);
-      border-radius:18px;
-      padding:35px 24px;
-      text-align:center;
-    }
+.card{
+background:var(--blanco);
+padding:26px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+border-top:5px solid var(--rojo);
+text-align:center;
+transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-    .contacto h2{
-      margin-top:0;
-      font-size:32px;
-    }
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 14px 28px rgba(0,0,0,0.12);
+}
 
-    .contacto p{
-      margin:8px 0;
-      font-size:18px;
-    }
+.icono-servicio{
+font-size:34px;
+color:var(--rojo);
+margin-bottom:14px;
+display:block;
+}
 
-    footer{
-      background:#0f0f0f;
-      color:#ddd;
-      text-align:center;
-      padding:30px 20px;
-      font-size:15px;
-    }
+.card h3{
+margin-top:0;
+font-size:22px;
+color:var(--rojo-oscuro);
+}
 
-    .whatsapp-flotante{
-      position:fixed;
-      right:20px;
-      bottom:20px;
-      background:#25D366;
-      color:white;
-      padding:15px 20px;
-      border-radius:999px;
-      text-decoration:none;
-      font-weight:bold;
-      box-shadow:0 4px 12px rgba(0,0,0,0.3);
-      z-index:1000;
-    }
+.card p{
+color:var(--gris-texto);
+}
 
-    @media (max-width:900px){
-      .hero-contenido,
-      .tarjetas{
-        grid-template-columns:1fr 1fr;
-      }
+/* MAPA */
 
-      .hero h2{
-        font-size:38px;
-      }
-    }
+.ubicacion-box{
+background:var(--blanco);
+padding:25px;
+border-radius:16px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
 
-    @media (max-width:700px){
-      .barra-superior{
-        align-items:flex-start;
-      }
+iframe{
+width:100%;
+height:360px;
+border:0;
+border-radius:14px;
+margin-top:18px;
+}
 
-      .hero-contenido,
-      .tarjetas{
-        grid-template-columns:1fr;
-      }
+.boton-maps{
+background:var(--rojo);
+color:var(--blanco);
+padding:14px 22px;
+text-decoration:none;
+border-radius:10px;
+display:inline-block;
+margin-top:20px;
+font-weight:bold;
+}
 
-      .hero{
-        padding:50px 20px;
-      }
+/* CONTACTO */
 
-      .hero h2{
-        font-size:32px;
-      }
+.contacto{
+background:var(--negro);
+color:var(--blanco);
+border-radius:18px;
+padding:35px 24px;
+text-align:center;
+}
 
-      .marca-texto h1{
-        font-size:24px;
-      }
+/* FOOTER */
 
-      .marca-texto p{
-        font-size:14px;
-      }
-    }
-  </style>
+footer{
+background:#0f0f0f;
+color:#ddd;
+text-align:center;
+padding:30px 20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-flotante{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:999px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+z-index:1000;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+.hero-contenido{
+grid-template-columns:1fr;
+}
+
+.tarjetas{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media (max-width:600px){
+
+.tarjetas{
+grid-template-columns:1fr;
+}
+
+.hero h2{
+font-size:32px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="barra-superior">
-      <div class="marca">
-        <img src="logo.png" alt="Logo Invercol" style="height:80px;border-radius:8px;">
-        <div class="marca-texto">
-          <h1>INVERCOL S.A.S.</h1>
-          <p>Radiadores y sistemas de enfriamiento</p>
-        </div>
-      </div>
-    </div>
-  </header>
+<header>
 
-  <section class="hero">
-    <div class="hero-contenido">
-      <div>
-        <h2>Especialistas en radiadores y sistemas de enfriamiento</h2>
-        <p>En Invercol S.A.S. ofrecemos soluciones en radiadores y sistemas de enfriamiento para aplicaciones automotrices, agrícolas e industriales.</p>
+<div class="barra-superior">
 
-        <div class="botones-hero">
-          <a class="boton-principal" href="https://wa.me/573006086842" target="_blank">Solicitar información</a>
-          <a class="boton-secundario" href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia" target="_blank">Cómo llegar</a>
-        </div>
-      </div>
+<div class="marca">
 
-      <div class="hero-caja">
-        <h3>Atención en Cali</h3>
-        <p><strong>Dirección:</strong> Carrera 1 #32-26, Barrio Santander</p>
-        <p><strong>WhatsApp:</strong> 300 608 6842</p>
-        <p><strong>Empresa:</strong> Invercol S.A.S.</p>
-      </div>
-    </div>
-  </section>
+<img src="logo.png" alt="Logo Invercol" style="height:80px;border-radius:8px;">
 
-  <main>
+<div class="marca-texto">
+<h1>INVERCOL S.A.S.</h1>
+<p>Radiadores y sistemas de enfriamiento</p>
+</div>
 
-    <section class="seccion">
-      <div class="titulo-seccion">
-        <h2>Qué hacemos</h2>
-      </div>
+</div>
 
-      <div class="tarjetas">
-        <div class="card">
-          <h3>🔧 Diagnóstico y reparación</h3>
-          <p>Realizamos diagnóstico y reparación de radiadores y componentes relacionados con el sistema de refrigeración.</p>
-        </div>
+</div>
 
-        <div class="card">
-          <h3>🧩 Radiadores, panales y componentes</h3>
-          <p>Ofrecemos radiadores, panales y componentes del sistema de refrigeración para aplicaciones automotrices, agrícolas e industriales.</p>
-        </div>
+</header>
 
-        <div class="card">
-          <h3>🚜 Aplicaciones</h3>
-          <p>Trabajamos con radiadores para aplicaciones automotrices, agrícolas e industriales.</p>
-        </div>
-      </div>
-    </section>
+<section class="hero">
 
-    <section class="seccion">
-      <div class="titulo-seccion">
-        <h2>Ubicación</h2>
-        <p>Visítanos en Cali o abre la ruta directamente en Google Maps.</p>
-      </div>
+<div class="hero-contenido">
 
-      <div class="ubicacion-box">
-        <p><strong>Dirección:</strong> Carrera 1 #32-26 Barrio Santander</p>
-        <p><strong>Ciudad:</strong> Cali, Colombia</p>
+<div>
 
-        <iframe
-          src="https://www.google.com/maps?q=Carrera%201%20%2332-26%20Barrio%20Santander%2C%20Cali%2C%20Colombia&output=embed"
-          allowfullscreen=""
-          loading="lazy">
-        </iframe>
+<h2>Especialistas en radiadores y sistemas de enfriamiento</h2>
 
-        <a class="boton-maps" href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia" target="_blank">
-          Abrir ubicación en Google Maps
-        </a>
-      </div>
-    </section>
+<p>
+En Invercol S.A.S. ofrecemos soluciones en radiadores y sistemas de enfriamiento
+para aplicaciones automotrices, agrícolas e industriales.
+</p>
 
-    <section class="seccion">
-      <div class="contacto">
-        <h2>Contacto</h2>
-        <p><strong>Invercol S.A.S.</strong></p>
-        <p>Radiadores y sistemas de enfriamiento</p>
-        <p>WhatsApp: 300 608 6842</p>
-        <p>Carrera 1 #32-26 Barrio Santander, Cali, Colombia</p>
-      </div>
-    </section>
+<div class="botones-hero">
 
-  </main>
+<a class="boton-principal" href="https://wa.me/573006086842" target="_blank">
+Solicitar información
+</a>
 
-  <footer>
-    <p><strong>INVERCOL S.A.S.</strong></p>
-    <p>Radiadores y sistemas de enfriamiento</p>
-    <p>Carrera 1 #32-26 Barrio Santander, Cali, Colombia</p>
-  </footer>
+<a class="boton-secundario"
+href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia"
+target="_blank">
+Cómo llegar
+</a>
 
-  <a class="whatsapp-flotante" href="https://wa.me/573006086842" target="_blank">
-    WhatsApp
-  </a>
+</div>
+
+</div>
+
+<div class="hero-caja">
+
+<h3>Atención en Cali</h3>
+
+<p><strong>Dirección:</strong> Carrera 1 #32-26, Barrio Santander</p>
+
+<p><strong>WhatsApp:</strong> 300 608 6842</p>
+
+<p><strong>Empresa:</strong> Invercol S.A.S.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<main>
+
+<section class="seccion">
+
+<div class="titulo-seccion">
+<h2>Qué hacemos</h2>
+</div>
+
+<div class="tarjetas">
+
+<div class="card">
+
+<i class="fas fa-wrench icono-servicio"></i>
+
+<h3>Diagnóstico y reparación</h3>
+
+<p>
+Realizamos diagnóstico y reparación de radiadores y componentes
+relacionados con el sistema de refrigeración.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-cogs icono-servicio"></i>
+
+<h3>Radiadores, panales y componentes</h3>
+
+<p>
+Ofrecemos radiadores, panales y componentes del sistema de refrigeración
+para aplicaciones automotrices, agrícolas e industriales.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-tractor icono-servicio"></i>
+
+<h3>Aplicaciones</h3>
+
+<p>
+Trabajamos con radiadores para aplicaciones automotrices,
+agrícolas e industriales.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="seccion">
+
+<div class="titulo-seccion">
+<h2>Ubicación</h2>
+<p>Visítanos en Cali o abre la ruta directamente en Google Maps.</p>
+</div>
+
+<div class="ubicacion-box">
+
+<p><strong>Dirección:</strong> Carrera 1 #32-26 Barrio Santander</p>
+<p><strong>Ciudad:</strong> Cali, Colombia</p>
+
+<iframe
+src="https://www.google.com/maps?q=Carrera%201%20%2332-26%20Barrio%20Santander%2C%20Cali%2C%20Colombia&output=embed"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+<a class="boton-maps"
+href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia"
+target="_blank">
+Abrir ubicación en Google Maps
+</a>
+
+</div>
+
+</section>
+
+<section class="seccion">
+
+<div class="contacto">
+
+<h2>Contacto</h2>
+
+<p><strong>Invercol S.A.S.</strong></p>
+
+<p>Radiadores y sistemas de enfriamiento</p>
+
+<p>WhatsApp: 300 608 6842</p>
+
+<p>Carrera 1 #32-26 Barrio Santander, Cali, Colombia</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p><strong>INVERCOL S.A.S.</strong></p>
+
+<p>Radiadores y sistemas de enfriamiento</p>
+
+<p>Carrera 1 #32-26 Barrio Santander, Cali, Colombia</p>
+
+</footer>
+
+<a class="whatsapp-flotante"
+href="https://wa.me/573006086842"
+target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
