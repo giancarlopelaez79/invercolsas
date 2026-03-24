@@ -19,7 +19,7 @@
   "telephone": "+57 300 608 6842",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Carrera 1 # 32-26 Barrio Santander",
+    "streetAddress": "Carrera 1 #32-26 Barrio Santander",
     "addressLocality": "Cali",
     "addressCountry": "CO"
   },
@@ -233,10 +233,12 @@ margin-top:20px;
 
 .boton-maps{
 background:var(--rojo);
-color:white;
+color:#ffffff;
 padding:14px 22px;
 border-radius:10px;
-display:inline-block;
+display:inline-flex;
+align-items:center;
+gap:8px;
 margin-top:24px;
 font-weight:bold;
 text-decoration:none;
@@ -244,6 +246,7 @@ text-decoration:none;
 
 .boton-maps:hover{
 background:var(--rojo-oscuro);
+color:#ffffff;
 }
 
 /* CONTACTO */
@@ -282,6 +285,8 @@ border-radius:999px;
 text-decoration:none;
 font-weight:bold;
 }
+
+/* RESPONSIVE */
 
 @media (max-width:900px){
 
@@ -364,7 +369,7 @@ Cómo llegar
 
 <h3>Atención en Cali</h3>
 
-<p><strong>Dirección:</strong> Carrera 1 # 32-26, Barrio Santander</p>
+<p><strong>Dirección:</strong> Carrera 1 #32-26, Barrio Santander</p>
 
 <p><strong>WhatsApp:</strong>
 <a href="tel:+573006086842">300 608 6842</a>
@@ -440,7 +445,7 @@ maquinaria agrícola y equipos industriales.
 <p>
 <strong>Dirección:</strong>
 <a href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia" target="_blank">
-Carrera 1 # 32-26 Barrio Santander
+Carrera 1 #32-26 Barrio Santander
 </a>
 </p>
 
@@ -454,7 +459,10 @@ loading="lazy">
 <a class="boton-maps"
 href="https://www.google.com/maps/search/?api=1&query=Carrera+1+%2332-26+Barrio+Santander+Cali+Colombia"
 target="_blank">
+
+<i class="fas fa-map-location-dot"></i>
 Abrir ubicación en Google Maps
+
 </a>
 
 </div>
@@ -476,7 +484,7 @@ Abrir ubicación en Google Maps
 
 <p>
 <i class="fas fa-location-dot"></i>
-Carrera 1 # 32-26 Barrio Santander, Cali, Colombia
+Carrera 1 #32-26 Barrio Santander, Cali, Colombia
 </p>
 
 </div>
