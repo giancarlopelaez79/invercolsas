@@ -7,7 +7,7 @@
 
 <title>Invercol SAS | Radiadores y sistemas de enfriamiento en Cali</title>
 
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 <meta name="description" content="Invercol SAS, especialistas en radiadores y sistemas de enfriamiento en Cali. Diagnóstico, reparación y suministro de radiadores, panales y componentes del sistema de refrigeración.">
 
@@ -231,6 +231,8 @@ border-radius:14px;
 margin-top:20px;
 }
 
+/* BOTON GOOGLE MAPS */
+
 .boton-maps{
 background:var(--rojo);
 color:#ffffff;
@@ -242,6 +244,10 @@ gap:8px;
 margin-top:24px;
 font-weight:bold;
 text-decoration:none;
+}
+
+.boton-maps i{
+color:#ffffff;
 }
 
 .boton-maps:hover{
@@ -284,6 +290,14 @@ padding:15px 20px;
 border-radius:999px;
 text-decoration:none;
 font-weight:bold;
+display:flex;
+align-items:center;
+gap:8px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp-flotante i{
+font-size:18px;
 }
 
 /* RESPONSIVE */
@@ -352,7 +366,7 @@ para aplicaciones automotrices, agrícolas e industriales.
 <div class="botones-hero">
 
 <a class="boton-principal" href="https://wa.me/573006086842" target="_blank">
-Solicitar información
+<i class="fab fa-whatsapp"></i> Solicitar información
 </a>
 
 <a class="boton-secundario"
@@ -500,7 +514,10 @@ Carrera 1 #32-26 Barrio Santander, Cali, Colombia
 <a class="whatsapp-flotante"
 href="https://wa.me/573006086842"
 target="_blank">
+
+<i class="fab fa-whatsapp"></i>
 WhatsApp
+
 </a>
 
 </body>
