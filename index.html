@@ -342,71 +342,71 @@ header{
 
 /* COMPROMISO TÉCNICO */
 
+.seccion-compromiso{
+  padding-top:44px;
+  padding-bottom:76px;
+}
+
 .compromiso-card{
   background:var(--blanco);
   border-radius:16px;
   box-shadow:var(--sombra);
   border-top:5px solid var(--rojo);
-  padding:46px 42px;
+  padding:38px 34px;
   text-align:center;
 }
 
 .compromiso-card h2{
   color:var(--rojo-oscuro);
-  font-size:31px;
+  font-size:34px;
   line-height:1.15;
   margin:0;
 }
 
 .compromiso-linea{
-  width:54px;
+  width:50px;
   height:3px;
   background:var(--rojo);
-  margin:16px auto 18px;
+  margin:15px auto 18px;
   border-radius:999px;
 }
 
 .compromiso-intro{
-  max-width:720px;
-  margin:0 auto 42px;
-  color:var(--negro);
-  font-size:17px;
+  max-width:760px;
+  margin:0 auto 34px;
+  color:var(--gris-texto);
+  font-size:16px;
 }
 
 .compromiso-pasos{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:0;
-  margin:0 auto 38px;
+  gap:22px;
+  align-items:stretch;
 }
 
 .compromiso-paso{
-  padding:0 28px;
+  padding:0 14px;
 }
 
 .compromiso-paso + .compromiso-paso{
-  border-left:1px solid #ddd;
+  border-left:1px solid #e2e2e2;
 }
 
 .compromiso-icono{
   color:var(--rojo);
-  font-size:50px;
+  font-size:34px;
   line-height:1;
-  margin-bottom:20px;
+  margin-bottom:14px;
 }
 
 .compromiso-paso h3{
-  color:var(--negro);
-  font-size:22px;
-  margin:0;
+  color:var(--rojo-oscuro);
+  margin-top:0;
 }
 
 .compromiso-paso .linea-mini{
-  width:42px;
-  height:3px;
-  background:var(--rojo);
-  margin:12px auto 20px;
-  border-radius:999px;
+  display:none;
 }
 
 .compromiso-paso p{
@@ -416,16 +416,12 @@ header{
 }
 
 .compromiso-cierre{
-  border-top:1px solid #ddd;
-  padding-top:26px;
-  max-width:820px;
-  margin:0 auto;
-  color:var(--negro);
-  font-size:17px;
-}
-
-.compromiso-cierre strong{
-  color:var(--rojo);
+  border-top:1px solid #e2e2e2;
+  padding-top:22px;
+  max-width:760px;
+  margin:32px auto 0;
+  color:var(--gris-texto);
+  font-size:16px;
 }
 
 /* BLOQUES */
@@ -641,21 +637,22 @@ a:focus-visible{
     padding:13px 16px;
   }
 
+  .seccion-compromiso{
+    padding-top:40px;
+    padding-bottom:70px;
+  }
+
   .compromiso-card{
     padding:34px 22px;
   }
 
   .compromiso-card h2{
-    font-size:27px;
+    font-size:30px;
   }
 
   .compromiso-intro{
     font-size:16px;
-    margin-bottom:34px;
-  }
-
-  .compromiso-icono{
-    font-size:42px;
+    margin-bottom:32px;
   }
 
 }
@@ -732,7 +729,7 @@ a:focus-visible{
 </div>
 </section>
 
-<section class="seccion">
+<section class="seccion seccion-compromiso">
 <div class="compromiso-card">
 <h2>Compromiso Técnico Invercol</h2>
 <div class="compromiso-linea"></div>
@@ -771,7 +768,7 @@ a:focus-visible{
 </div>
 </div>
 <div class="compromiso-cierre">
-        Más de <strong>25 años</strong> ofreciendo soluciones confiables en radiadores y sistemas de enfriamiento.
+        Un proceso claro para cuidar cada trabajo desde el diagnóstico hasta la entrega.
       </div>
 </div>
 </section>
